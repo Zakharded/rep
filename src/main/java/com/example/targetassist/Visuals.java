@@ -46,7 +46,7 @@ public class Visuals {
         }
 
         // no particles: wipe them every tick, so none are ever drawn
-        if (Settings.noParticles) mc.particleEngine.clearParticles();
+        if (Settings.noParticles) mc.particleEngine.setLevel(mc.level);
 
         applyPerf(mc);
     }
